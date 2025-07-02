@@ -4,7 +4,7 @@ import Report from "./pages/Report.jsx";
 function Home() {
   const handleDownload = async () => {
     try {
-      const response = await fetch("http://pdf.inzighted.com/generate-pdf");
+      const response = await fetch("https://pdf.inzighted.com/generate-pdf");
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
